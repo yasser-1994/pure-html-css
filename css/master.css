@@ -9,7 +9,7 @@ html {
 }
 :root {
   --main-color: #2196f3;
-  --main-color-alt: #1787e0;
+  --main-color-alt: #2786d3;
   --main-transition: 0.3s;
   --main-background: #ececec;
   --pargraph: #696969;
@@ -18,6 +18,22 @@ html {
 body {
   font-family: "Cairo", sans-serif;
   height: 6000px;
+}
+.btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid #eee;
+  outline: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.btn:hover{
+  background-color: var(--main-color-alt);
 }
 .main-title {
   margin: 0 auto 80px;
@@ -358,3 +374,21 @@ ul {
   }
 }
 /* end animation */
+/* Start gallary */
+.gallary {
+  background-color: var(--main-background);
+  padding: var(--main-padding);
+}
+.gallary .container {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ gap: 20px;
+}
+.gallary .container .box{
+  border: 15px solid white;
+}
+.gallary .container .box{
+}
+.gallary .container .box img{
+  max-width: 100%;
+}
