@@ -148,6 +148,7 @@ ul {
   width: 100%;
   left: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
   top: calc(100% + 50px);
@@ -160,13 +161,9 @@ ul {
   width: 400px;
   max-width: 100%;
 }
-.header .mega-menu .links {
-  padding: 0 20px;
-  min-width: 240px;
-}
 .header .mega-menu .links li {
-  margin-top: 20px;
-  padding: 10px 0;
+  padding: 18px 0;
+  min-width: 240px;
 }
 .header .mega-menu .links li:not(:last-child) {
   border-bottom: 1px solid #e9e6e6;
@@ -254,9 +251,10 @@ ul {
   width: 250px;
   overflow: hidden;
   box-shadow: 0 2px 15px #00000003;
-  transition: transform var(--main-transition), box-shadow var(--main-transition);
+  transition: transform var(--main-transition),
+    box-shadow var(--main-transition);
 }
-.all-card .card:hover{
+.all-card .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 2px 15px #0000001c;
 }
@@ -297,7 +295,7 @@ ul {
 .all-card .card .footer a:hover {
   color: var(--main-color-alt);
 }
-.all-card .card:hover .footer i{
+.all-card .card:hover .footer i {
   animation: moving-arrow 0.5s linear infinite;
 }
 /* End Articles */
@@ -355,8 +353,8 @@ ul {
   }
 }
 @keyframes moving-arrow {
- 100%{
-   transform: translateX(10px);
- }
+  100% {
+    transform: translateX(10px);
+  }
 }
 /* end animation */

@@ -45,7 +45,7 @@
 @media (max-width: 991px) {
   .header .container .mega-menu {
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
     gap: 0;
     width: 100%;
     left: 0;
@@ -53,9 +53,7 @@
   }
   .header .mega-menu .links {
     width: 100%;
-  }
-  .header .mega-menu .links li {
-    margin-top: 5px;
+    padding: 0 20px;
   }
   .header .mega-menu .links:first-of-type li:last-child {
     border-bottom: 1px solid #e9e6e6;
