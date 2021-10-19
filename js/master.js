@@ -1,6 +1,6 @@
 const mybt = document.getElementById("btn");
 window.onscroll = () => {
-  if (window.pageYOffset >= 500) {
+  if (window.pageYOffset >= 800) {
     mybt.style.display = "block";
   } else {
     mybt.style.display = "none";

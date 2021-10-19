@@ -29,6 +29,7 @@ body {
   color: white;
   border: 2px solid #eee;
   outline: none;
+  display: none;
   cursor: pointer;
   transition: var(--main-transition);
 }
