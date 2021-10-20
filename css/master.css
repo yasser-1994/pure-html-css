@@ -32,6 +32,7 @@ body {
   display: none;
   cursor: pointer;
   transition: var(--main-transition);
+  z-index: 1000;
 }
 .btn:hover {
   background-color: var(--main-color-alt);
