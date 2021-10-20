@@ -33,7 +33,7 @@ body {
   cursor: pointer;
   transition: var(--main-transition);
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--main-color-alt);
 }
 .main-title {
@@ -316,6 +316,48 @@ ul {
   animation: moving-arrow 0.5s linear infinite;
 }
 /* End Articles */
+/* Start gallary */
+.gallary {
+  background-color: var(--main-background);
+  padding: var(--main-padding);
+}
+.gallary .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.gallary .container .box {
+  border: 15px solid white;
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+    0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+.gallary .container .box .image {
+  position: relative;
+  overflow: hidden;
+}
+.gallary .container .box .image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: rgb(255 255 255 / 20%);
+  opacity: 0;
+  z-index: 100;
+}
+.gallary .container .box .image:hover::before {
+  animation: flashing 0.7s;
+}
+.gallary .container .box .image:hover img {
+  transform: rotate(-5deg) scale(1.2);
+}
+.gallary .container .box img {
+  max-width: 100%;
+  transition: var(--main-transition);
+}
+/* End gallary */
 /* start animation */
 @keyframes up-un {
   0%,
@@ -374,22 +416,16 @@ ul {
     transform: translateX(10px);
   }
 }
+/* تأثير الفلاش */
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
 /* end animation */
-/* Start gallary */
-.gallary {
-  background-color: var(--main-background);
-  padding: var(--main-padding);
-}
-.gallary .container {
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
- gap: 20px;
-}
-.gallary .container .box{
-  border: 15px solid white;
-}
-.gallary .container .box{
-}
-.gallary .container .box img{
-  max-width: 100%;
-}

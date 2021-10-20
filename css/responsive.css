@@ -92,15 +92,15 @@
 }
 /* Start Articles */
 @media (max-width: 767px) {
-  .articles .all-card .card{
+  .articles .all-card .card {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 992px) {
-  .articles .all-card{
+  .articles .all-card {
     justify-items: center;
   }
-  .articles .all-card .card{
+  .articles .all-card .card {
     margin-bottom: 20px;
   }
 }
