@@ -26,6 +26,10 @@
 /* end media global */
 /* hedear responsive */
 @media (max-width: 767px) {
+  .btn{
+    display: none;
+    visibility: hidden;
+  }
   .header .logo {
     width: 100%;
   }
@@ -62,6 +66,7 @@
     color: var(--main-color);
     transition: var(--main-transition);
     font-size: 14px;
+    font-weight: bold;
   }
 }
 @media (max-width: 991px) {
@@ -99,8 +104,10 @@
 @media (max-width: 992px) {
   .articles .all-card {
     justify-items: center;
+    gap: 10px;
   }
   .articles .all-card .card {
     margin-bottom: 20px;
+    width: 100%;
   }
 }
