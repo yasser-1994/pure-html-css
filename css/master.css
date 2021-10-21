@@ -14,6 +14,8 @@ html {
   --main-background: #ececec;
   --pargraph: #696969;
   --main-padding: 100px 0;
+  --green-color: #009688;
+  --red-color: #f44036;
 }
 body {
   font-family: "Cairo", sans-serif;
@@ -58,6 +60,8 @@ body {
   position: relative;
   z-index: 1;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .main-title::before {
   content: "";
@@ -97,6 +101,9 @@ body {
 }
 a {
   text-decoration: none;
+}
+.text-center {
+  text-align: center;
 }
 ul {
   list-style: none;
@@ -374,6 +381,287 @@ ul {
   transition: var(--main-transition);
 }
 /* End gallary */
+/* Start features */
+.features {
+  padding: var(--main-padding);
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.features .card {
+  border: 1px solid #cdd0d9;
+  overflow: hidden;
+}
+/****************************************/
+.features .card .image {
+  position: relative;
+}
+.features .card .image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.features .card:hover .image::before {
+  background-color: #2195f32f;
+}
+.features .red:hover .image::before {
+  background-color: #f43f362f;
+}
+.features .green:hover .image::before {
+  background-color: #0096872f;
+}
+.features .card .image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0px 0px 120px 500px;
+  border-color: transparent transparent white transparent;
+  transition: var(--main-transition);
+}
+.features .card .image img {
+  max-width: 100%;
+}
+.features .card:hover .image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 0px 500px 120px 0px;
+  border-color: transparent transparent white transparent;
+}
+/****************************************/
+.features .content {
+  padding: 20px 10px;
+}
+.features .content h3 {
+  margin: auto;
+  margin-bottom: 30px;
+  width: fit-content;
+  border-bottom: 3px solid var(--main-color);
+  padding: 10px 0;
+  font-size: 30px;
+  color: var(--main-color);
+}
+.features .content p {
+  font-size: 16px;
+  color: var(--pargraph);
+  line-height: 30px;
+}
+.features .content button {
+  margin: 35px 0 15px;
+  padding: 10px 25px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  background: none;
+  outline: none;
+  transition: var(--main-transition);
+}
+.features .red h3,
+.features .red button {
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+.features .green h3,
+.features .green button {
+  color: var(--green-color);
+  border-color: var(--green-color);
+}
+.features .content button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.features .card:hover button {
+  color: white;
+}
+.features .card:hover button::before {
+  width: 100%;
+}
+.features .red:hover button::before {
+  background-color: var(--red-color);
+}
+.features .green:hover button::before {
+  background-color: var(--green-color);
+}
+/* End features */
+/* Start Testmonials */
+.testmonials {
+  position: relative;
+  background-color: var(--main-background);
+  padding: var(--main-padding);
+}
+.testmonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px 20px;
+}
+.testmonials .box {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transition: transform var(--main-transition);
+  transform: rotate(3deg) scale(0.9);
+}
+.testmonials .box:nth-child(2) {
+  transform: rotate(-3deg) scale(0.9);
+}
+.testmonials .box:nth-child(4) {
+  transform: rotate(-3deg) scale(0.9);
+}
+.testmonials .box:nth-child(6) {
+  transform: rotate(-3deg) scale(0.9);
+}
+.testmonials .box:hover {
+  transform: rotate(0) scale(1);
+}
+.testmonials .box .image {
+  position: absolute;
+  top: -60px;
+  right: -15px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--main-background);
+  overflow: hidden;
+}
+.testmonials .box .image img {
+  max-width: 100%;
+}
+.testmonials .box p {
+  color: var(--pargraph);
+  margin: 10px 0;
+}
+.testmonials .box p:last-child {
+  line-height: 25px;
+}
+.testmonials .box .row .fas {
+  color: #f3d711;
+}
+/* End Testmonials */
+/* Start Team-Member */
+.team-member {
+  padding: var(--main-padding);
+}
+.team-member .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.team-member .box {
+  position: relative;
+  padding: 50px 0 30px;
+  transition: var(--main-transition);
+  overflow: hidden;
+}
+.team-member .box::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  right: 0;
+  top: 0;
+  background-color: var(--main-background);
+  z-index: -1;
+  border-radius: 10px;
+}
+.team-member .box::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transition: var(--main-transition);
+  background-color: #e4e4e4;
+  z-index: -1;
+  border-radius: 10px;
+} 
+.team-member .box:hover::after {
+  width: 80%;
+} 
+.team-member .box .row {
+  display: flex;
+  justify-content: space-between;
+}
+.team-member .box .image {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: var(--main-transition);
+}
+.team-member .box:hover .image {
+  filter: grayscale(100%);
+}
+.team-member .box .image img {
+  max-width: 100%;
+}
+.team-member .box .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.team-member .box .social a {
+  color: var(--pargraph);
+  transition: var(--main-transition);
+  font-size: 20px;
+}
+.team-member .box .social a:hover {
+  color: var(--main-color);
+}
+.team-member .box .info {
+  padding: 10px 10px 0;
+  width: fit-content;
+  margin: auto;
+}
+.team-member .box .info h3 {
+  color: var(--main-color);
+  margin: 10px 0;
+  transition: var(--main-transition);
+}
+.team-member .box:hover .info h3{
+  color: black;
+}
+/* End Team-Member */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* start animation */
 @keyframes up-un {

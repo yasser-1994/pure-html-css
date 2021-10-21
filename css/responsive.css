@@ -45,6 +45,7 @@
     height: 2px;
   }
 }
+/* End Header */
 /* start megamenu */
 @media (max-width: 991px) {
   .header .container .mega-menu {
@@ -120,3 +121,18 @@
   }
 }
 /* End Articles */
+/* Start Testmonials */
+@media (max-width: 767px){
+  .testmonials .box{
+   text-align: center;
+   padding-top: 50px;
+  }
+  .testmonials .box .image{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .testmonials .box p{
+    text-align: center;
+  }
+}
+/* End Testmonials */
