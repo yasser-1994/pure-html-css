@@ -87,6 +87,7 @@
   }
   .linding .text {
     text-align: center;
+    margin-top: 50px;
   }
   .linding .text h1 {
     font-size: 25px;
@@ -111,3 +112,11 @@
     width: 100%;
   }
 }
+@media (min-width: 991px) and (max-width: 1199px){
+  .articles .all-card {
+    justify-items: center;
+    gap: 30px 0px;
+    grid-template-columns: auto auto;
+  }
+}
+/* End Articles */
