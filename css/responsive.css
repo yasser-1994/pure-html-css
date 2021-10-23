@@ -1,32 +1,32 @@
-/* start media global */
-/* small */
+/* start media global =========================*/
+/* small ======================================*/
 @media (min-width: 576px) {
   .container {
     width: 540px;
   }
 }
-/* medium */
+/* medium =====================================*/
 @media (min-width: 768px) {
   .container {
     width: 720px;
   }
 }
-/* large */
+/* large =====================================*/
 @media (min-width: 992px) {
   .container {
     width: 960px;
   }
 }
-/* X-Large */
+/* X-Large ====================================*/
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
   }
 }
-/* end media global */
-/* hedear responsive */
+/* end media global ===========================*/
+/* start hedear ===============================*/
 @media (max-width: 767px) {
-  .btn{
+  .btn {
     display: none;
     visibility: hidden;
   }
@@ -45,8 +45,8 @@
     height: 2px;
   }
 }
-/* End Header */
-/* start megamenu */
+/* End Header ===================================*/
+/* start megamenu ===============================*/
 @media (max-width: 991px) {
   .header .container .mega-menu {
     flex-direction: column;
@@ -75,8 +75,8 @@
     display: none;
   }
 }
-/* end megamenu */
-/* Start Linding  */
+/* end megamenu ================================*/
+/* Start Linding  ==============================*/
 @media (max-width: 991px) {
   .linding::before {
     transform: skewY(-16deg);
@@ -97,7 +97,7 @@
     width: 400px;
   }
 }
-/* Start Articles */
+/* Start Articles ==============================*/
 @media (max-width: 767px) {
   .articles .all-card .card {
     margin-bottom: 20px;
@@ -113,26 +113,34 @@
     width: 100%;
   }
 }
-@media (min-width: 991px) and (max-width: 1199px){
+@media (min-width: 991px) and (max-width: 1199px) {
   .articles .all-card {
     justify-items: center;
     gap: 30px 0px;
     grid-template-columns: auto auto;
   }
 }
-/* End Articles */
-/* Start Testmonials */
-@media (max-width: 767px){
-  .testmonials .box{
-   text-align: center;
-   padding-top: 50px;
+/* End Articles ==================================*/
+/* Start Testmonials =============================*/
+@media (max-width: 767px) {
+  .testmonials .box {
+    text-align: center;
+    padding-top: 50px;
   }
-  .testmonials .box .image{
+  .testmonials .box .image {
     left: 50%;
     transform: translateX(-50%);
   }
-  .testmonials .box p{
+  .testmonials .box p {
     text-align: center;
   }
 }
-/* End Testmonials */
+/* End Testmonials =================================*/
+/* start our skils =================================*/
+@media (max-width: 991px) {
+  .our-skills .container {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+}
+/* end our skils ===================================*/
