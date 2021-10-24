@@ -152,3 +152,57 @@
   }
 }
 /* end How-It-Works===============================*/
+/* start events ==================================*/
+@media (max-width: 767px) {
+  .events .container form {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  .events .container .subscribe {
+    width: 100%;
+  }
+  .events .container form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px 0;
+    border-radius: 0;
+  }
+  .events .container form input[type="email"],
+  .events .container form input[type="submit"] {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .events .container {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+  .events .container form {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .events::before,
+  .events::after {
+    display: none;
+  }
+}
+/* end events ==================================*/
+/* start plans==================================*/
+@media (max-width: 1199px) {
+  .plans::before,
+  .plans::after {
+    display: none;
+  }
+  .plans .container{
+    gap: 50px;
+  }
+  .plans .container .box:nth-of-type(2){
+    transform: translateY(0);
+  }
+}
+/* end plans==================================*/
