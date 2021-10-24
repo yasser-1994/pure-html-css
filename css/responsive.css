@@ -144,3 +144,11 @@
   }
 }
 /* end our skils ===================================*/
+/* start How-It-Works===============================*/
+@media (max-width: 991px) {
+  .How-It-Works .container {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+}
+/* end How-It-Works===============================*/
