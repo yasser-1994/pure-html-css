@@ -93,7 +93,7 @@
   .linding .text h1 {
     font-size: 25px;
   }
-  .linding .image img {
+  .linding .image{
     width: 300px;
   }
 }

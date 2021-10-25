@@ -121,6 +121,9 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+.img-max{
+  max-width: 100%;
+}
 /* End Global Rules =================================================== */
 /* Start Section Header================================================ */
 .header {
@@ -201,7 +204,6 @@ ul {
 }
 .header .mega-menu .image img {
   width: 400px;
-  max-width: 100%;
 }
 .header .mega-menu .links li {
   padding: 18px 0;
@@ -260,10 +262,11 @@ ul {
   line-height: 30px;
   font-size: 20px;
 }
+.linding .image{
+  flex-basis: 100%;
+}
 .linding .image img {
   position: relative;
-  width: 600px;
-  min-width: 100%;
   margin-bottom: 100px;
   animation: up-un 5s linear infinite;
 }
@@ -327,7 +330,7 @@ ul {
   color: var(--pargraph);
   line-height: 23px;
 }
-.all-card .card .footer {
+.all-card .card .articles-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -335,14 +338,14 @@ ul {
   font-weight: bold;
   color: var(--main-color);
 }
-.all-card .card .footer a {
+.all-card .card .articles-footer a {
   font-weight: bold;
   color: var(--main-color);
 }
-.all-card .card .footer a:hover {
+.all-card .card .articles-footer a:hover {
   color: var(--main-color-alt);
 }
-.all-card .card:hover .footer i {
+.all-card .card:hover .articles-footer i {
   animation: moving-arrow 0.5s linear infinite;
 }
 /* End Articles ========================================= */
@@ -385,7 +388,6 @@ ul {
   transform: rotate(-5deg) scale(1.2);
 }
 .gallary .container .box img {
-  max-width: 100%;
   transition: var(--main-transition);
 }
 /* End gallary =============================================*/
@@ -430,9 +432,6 @@ ul {
   border-width: 0px 0px 120px 500px;
   border-color: transparent transparent white transparent;
   transition: var(--main-transition);
-}
-.features .card .image img {
-  max-width: 100%;
 }
 .features .card:hover .image::after {
   content: "";
@@ -549,9 +548,6 @@ ul {
   border: 10px solid var(--main-background);
   overflow: hidden;
 }
-.testmonials .box .image img {
-  max-width: 100%;
-}
 .testmonials .box p {
   color: var(--pargraph);
   margin: 10px 0;
@@ -616,9 +612,6 @@ ul {
 }
 .team-member .box:hover .image {
   filter: grayscale(100%);
-}
-.team-member .box .image img {
-  max-width: 100%;
 }
 .team-member .box .social {
   display: flex;
@@ -740,10 +733,7 @@ ul {
   justify-content: space-between;
   gap: 0 50px;
 }
-.our-skills .container .image img {
-  max-width: 100%;
-}
-.our-skills .container .skills {
+.our-skills .container .skills{
   width: 100%;
 }
 .our-skills .progress-perant {
@@ -802,9 +792,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 0 50px;
-}
-.How-It-Works .container .image img {
-  max-width: 100%;
 }
 .How-It-Works .container .work {
   display: flex;
@@ -886,11 +873,8 @@ ul {
   align-items: center;
   gap: 0 50px;
 }
-.events .container .image {
-  width: 100%;
-}
-.events .container .image img {
-  max-width: 100%;
+.events .container .image, .events .days-events {
+  flex-basis: 50%;
 }
 .events .days-events .days-hours {
   display: flex;
@@ -941,9 +925,9 @@ ul {
   margin-top: 50px;
 }
 .events .subscribe form {
-  border: 35px solid #f5f5f5;
+  border: 35px solid #d5d5d5;
   border-radius: 80px;
-  background-color: #f5f5f5;
+  background-color: #d5d5d5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1155,16 +1139,13 @@ ul {
 /* .videos-channel  */
 .top-videos .container .videos-channel {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   background-color: var(--main-background);
   border: 1px solid var(--main-border);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-}
-.top-videos .container .videos-channel img {
-  max-width: 100%;
 }
 .top-videos .container .videos-channel .bottom {
   display: grid;
@@ -1189,9 +1170,6 @@ ul {
 }
 .top-videos .videos-channel .bottom .box:hover:after {
   background-color: rgb(0 0 0 / 10%);
-}
-.top-videos .videos-channel .bottom .box .image .img {
-  max-width: 100%;
 }
 .top-videos .videos-channel .bottom .box .time {
   position: absolute;
@@ -1332,7 +1310,6 @@ ul {
 }
 .request .image img {
   width: 300px;
-  max-width: 100%;
 }
 /* form */
 .request .form {
@@ -1475,16 +1452,13 @@ ul {
 }
 .footer .container .box img {
   border: 2px solid white;
-  max-width: 100%;
 }
-
 .footer .foot {
   padding: 30px;
   border-top: 1px solid white;
   color: white;
   text-align: center;
 }
-
 /* end footer ==========================================*/
 /* start animation =====================================*/
 @keyframes up-un {
