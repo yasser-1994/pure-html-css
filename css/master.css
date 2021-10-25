@@ -925,9 +925,9 @@ ul {
   margin-top: 50px;
 }
 .events .subscribe form {
-  border: 35px solid #d5d5d5;
+  border: 35px solid #e1e1e1;
   border-radius: 80px;
-  background-color: #d5d5d5;
+  background-color: #e1e1e1;
   display: flex;
   justify-content: center;
   align-items: center;
