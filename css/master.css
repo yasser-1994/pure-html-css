@@ -762,23 +762,14 @@ ul {
   background-color: #d5d5d5;
   position: relative;
 }
-.our-skills .progress::before {
-  content: "";
+.our-skills .progress span {
   position: absolute;
-  width: 80%;
+  width: 0;
   height: 100%;
   top: 0;
   left: 0;
   background-color: var(--main-color);
-}
-.our-skills .progress-perant:nth-of-type(2) .progress::before {
-  width: 85%;
-}
-.our-skills .progress-perant:nth-of-type(3) .progress::before {
-  width: 60%;
-}
-.our-skills .progress-perant:nth-of-type(4) .progress::before {
-  width: 75%;
+  transition: 0.5s;
 }
 /* end our skils ==========================================*/
 /* start How-It-Works======================================*/
