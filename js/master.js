@@ -1,5 +1,5 @@
 const mybt = document.getElementById("btn");
-window.onscroll = () => {
+window.addEventListener("scroll", () => {
   if (window.pageYOffset >= 800) {
     mybt.style.display = "block";
   } else {
@@ -8,18 +8,18 @@ window.onscroll = () => {
   mybt.addEventListener("click", () => {
     window.scrollTo(0, 0);
   });
-};
-
+});
+// start skills ********************************
 let skils = document.querySelector(".our-skills");
 let span = document.querySelectorAll(".progress span");
-window.onscroll = function () {
+window.addEventListener("scroll", () => {
   if (window.scrollY >= skils.offsetTop - 100) {
     span.forEach((span) => {
       span.style.width = span.dataset.width;
     });
   }
-};
-
+});
+// start events *****************************
 let countDownDate = new Date("Dec 30, 2022 23:59:59").getTime();
 let counter = setInterval(() => {
   let datNow = new Date().getTime();
@@ -33,19 +33,18 @@ let counter = setInterval(() => {
   document.querySelector(".minutes").innerHTML = minutes;
   document.querySelector(".seconds").innerHTML = seconds;
 }, 1000);
-
+// start stats ***********************************
 let nums = document.querySelectorAll(".nums h3");
 let section = document.querySelector(".stats");
 let started = false;
-window.onscroll = function () {
+window.addEventListener("scroll", () => {
   if (window.scrollY >= section.offsetTop - 100) {
     if (!started) {
       nums.forEach((num) => startCount(num));
     }
     started = true;
   }
-};
-
+});
 function startCount(el) {
   let goal = el.dataset.goal;
   let count = setInterval(() => {
