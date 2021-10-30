@@ -121,7 +121,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-.img-max{
+.img-max {
   max-width: 100%;
 }
 /* End Global Rules =================================================== */
@@ -262,7 +262,7 @@ ul {
   line-height: 30px;
   font-size: 20px;
 }
-.linding .image{
+.linding .image {
   flex-basis: 100%;
 }
 .linding .image img {
@@ -733,7 +733,7 @@ ul {
   justify-content: space-between;
   gap: 0 50px;
 }
-.our-skills .container .skills{
+.our-skills .container .skills {
   width: 100%;
 }
 .our-skills .progress-perant {
@@ -864,7 +864,8 @@ ul {
   align-items: center;
   gap: 0 50px;
 }
-.events .container .image, .events .days-events {
+.events .container .image,
+.events .days-events {
   flex-basis: 50%;
 }
 .events .days-events .days-hours {
